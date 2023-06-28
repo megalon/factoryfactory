@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:GroupBox style="flex-direction: row;">
+        <ui:Button text="Next" display-tooltip-when-elided="true" name="ButtonNext" style="flex-grow: 0;" />
+        <ui:Label text="CurrentState" display-tooltip-when-elided="true" name="LabelCurrentState" style="-unity-font: url(&apos;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&apos;); color: rgb(255, 255, 255); font-size: 24px;" />
+    </ui:GroupBox>
+</ui:UXML>

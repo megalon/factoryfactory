@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:TextField picking-mode="Ignore" text="&quot;DreamFoam&quot; - A revolutionary mattress designed for " name="TextFieldGeneratorInput" password="false" style="height: auto; white-space: normal; max-height: none; min-height: 100px;" />
+        <ui:Button text="Generate GPT-3 Result" display-tooltip-when-elided="true" name="ButtonGenerateText" style="margin-top: 2px; margin-bottom: 4px;" />
+        <ui:Label text="GPT-3 Result" display-tooltip-when-elided="true" name="LabelGeneratedText" style="background-color: rgb(255, 255, 255); max-height: 100px; height: 100px; padding-left: 8px; padding-right: 8px; padding-top: 8px; padding-bottom: 8px; margin-left: 4px; margin-top: 2px;" />
+        <ui:Button text="Speak" display-tooltip-when-elided="true" name="ButtonSpeak" />
+        <ui:Label display-tooltip-when-elided="true" name="LabelSpeechMessages" style="white-space: normal; background-color: rgba(255, 255, 255, 0); margin-left: 4px; margin-top: 2px;" />
+    </ui:VisualElement>
+</ui:UXML>

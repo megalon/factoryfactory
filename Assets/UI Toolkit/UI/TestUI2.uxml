@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:ScrollView style="max-height: 100px;">
+            <ui:TextField picking-mode="Ignore" text="The name of the fictional product is the" name="TextFieldNameGenInput" password="false" readonly="false" style="height: auto; white-space: normal; max-height: none; min-height: auto;" />
+        </ui:ScrollView>
+        <ui:ScrollView style="max-height: 200px;">
+            <ui:TextField picking-mode="Ignore" text="You are a writer for the TV show How It&apos;s Made.&#10;In this episode you are describing how a modern {product name} is made.&#10;Near the end of the episode the narrator loses interest and beings talking about something else.&#10;Finish writing the rest of this episode:&#10;&#10;&quot;Narrator: It&apos;s hard to believe that there was ever a time before the {product name}. Modern {product name}s are manufactured in one of the most complex processes known to mankind, and it takes a state of the art facility to manufacture it.&#10;&#10;This complex process starts with" name="TextFieldDescriptionGenInput" password="false" readonly="false" style="height: auto; white-space: normal; max-height: none; min-height: auto;" />
+        </ui:ScrollView>
+        <ui:GroupBox style="flex-direction: row; flex-grow: 0; flex-wrap: nowrap; -unity-text-align: middle-center; -unity-font-style: normal;">
+            <ui:Toggle name="ToggleAutoSpeak" text=" Auto Speak" style="flex-shrink: 1; flex-grow: 0; flex-direction: row;" />
+            <ui:Button text="Generate GPT-3 Result" display-tooltip-when-elided="true" name="ButtonGenerateText" style="margin-top: 2px; margin-bottom: 4px; flex-grow: 1;" />
+        </ui:GroupBox>
+        <ui:ScrollView style="flex-wrap: nowrap; max-height: 200px;">
+            <ui:TextField picking-mode="Ignore" name="TextFieldGeneratedText" text="Generated Text..." readonly="true" style="flex-grow: 0; flex-wrap: wrap; max-height: none; height: auto; white-space: normal; -unity-text-align: upper-left; flex-direction: row;" />
+        </ui:ScrollView>
+        <ui:Button text="Speak" display-tooltip-when-elided="true" name="ButtonSpeak" />
+        <ui:Label display-tooltip-when-elided="true" name="LabelSpeechMessages" style="white-space: normal; background-color: rgba(255, 255, 255, 0); margin-left: 4px; margin-top: 2px;" />
+    </ui:VisualElement>
+</ui:UXML>

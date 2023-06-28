@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:GroupBox style="flex-direction: row;">
+        <ui:Button text="Next" display-tooltip-when-elided="true" name="ButtonGoToNext" style="flex-grow: 0;" />
+        <ui:Button text="Fade In" display-tooltip-when-elided="true" name="ButtonFadeIn" style="flex-grow: 0;" />
+        <ui:Button text="Fade Out" display-tooltip-when-elided="true" name="ButtonFadeOut" style="flex-grow: 0;" />
+        <ui:Button text="Crossfade" display-tooltip-when-elided="true" name="ButtonCrossfade" style="flex-grow: 0;" />
+        <ui:Button text="PlayVid" display-tooltip-when-elided="true" name="ButtonPlayVid" style="flex-grow: 0;" />
+    </ui:GroupBox>
+</ui:UXML>

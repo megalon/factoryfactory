@@ -1,0 +1,29 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement>
+        <ui:GroupBox style="flex-direction: row; flex-grow: 1;">
+            <ui:Button text="Generate Script" display-tooltip-when-elided="true" name="ButtonGenerateScript" />
+            <ui:Button text="Uberduck" display-tooltip-when-elided="true" name="ButtonUberduck" />
+            <ui:Button text="Azure" display-tooltip-when-elided="true" name="ButtonAzure" />
+            <ui:Label text="LabelSpeechMessages" display-tooltip-when-elided="true" name="LabelSpeechMessages" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:Foldout text="Script parts" name="Foldout">
+        <ui:VisualElement>
+            <ui:TextField picking-mode="Ignore" label="Product Name" text="Name" name="TextFieldProductName" readonly="true" value="Name" style="flex-wrap: nowrap; flex-direction: column; white-space: nowrap;" />
+            <ui:ScrollView style="flex-wrap: wrap; height: auto; max-height: 140px; flex-direction: column;">
+                <ui:TextField picking-mode="Ignore" label="Introduction" value="Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro " text="Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro Intro " name="TextFieldIntro" readonly="true" multiline="false" style="flex-wrap: nowrap; white-space: normal; flex-direction: column;" />
+            </ui:ScrollView>
+            <ui:ScrollView style="flex-wrap: wrap; height: auto; max-height: 140px; flex-direction: column;">
+                <ui:TextField picking-mode="Ignore" label="Steps" value="Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps " text="Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps " name="TextFieldSteps" readonly="true" multiline="false" style="flex-wrap: nowrap; white-space: normal; flex-direction: column;" />
+            </ui:ScrollView>
+            <ui:ScrollView style="flex-wrap: wrap; height: auto; max-height: 140px; flex-direction: column;">
+                <ui:TextField picking-mode="Ignore" label="Outro" value="Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro " text="Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro Outro " name="TextFieldOutro" readonly="true" multiline="false" style="flex-wrap: nowrap; white-space: normal; flex-direction: column;" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:Foldout>
+    <ui:Foldout text="Full Script" name="FoldoutFullScript" value="false">
+        <ui:ScrollView style="max-height: 400px;">
+            <ui:TextField picking-mode="Ignore" value="filler text" text="Full script here..." name="TextFieldFullScript" style="flex-direction: column; white-space: normal; flex-wrap: nowrap;" />
+        </ui:ScrollView>
+    </ui:Foldout>
+</ui:UXML>

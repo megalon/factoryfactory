@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement>
+        <ui:GroupBox style="flex-direction: row; flex-grow: 1;">
+            <ui:Button text="Generate Script" display-tooltip-when-elided="true" name="ButtonGenerateScript" />
+            <ui:Button text="Uberduck" display-tooltip-when-elided="true" name="ButtonUberduck" />
+            <ui:Button text="Play Script" display-tooltip-when-elided="true" name="ButtonPlayScript" />
+            <ui:Button text="Azure" display-tooltip-when-elided="true" name="ButtonAzure" />
+            <ui:Label text="LabelSpeechMessages" display-tooltip-when-elided="true" name="LabelSpeechMessages" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:Foldout text="Script parts" name="Foldout" value="false">
+        <ui:VisualElement style="flex-direction: column;">
+            <ui:ScrollView style="flex-wrap: wrap; max-height: 140px;">
+                <ui:GroupBox style="flex-direction: row;">
+                    <ui:TextField picking-mode="Ignore" label="Product Name Prompt" text="Product Name Prompt&#10;Product Name Prompt" name="TextFieldProductNamePrompt" readonly="false" value="Name" multiline="true" style="flex-wrap: nowrap; flex-direction: column; white-space: nowrap; width: 48%;" />
+                    <ui:TextField picking-mode="Ignore" label="Product NameResult" value="filler text" text="Product Name Result&#10;Product Name Result" name="TextFieldProductNameResult" readonly="true" multiline="true" style="flex-direction: column; flex-wrap: wrap; width: 48%;" />
+                </ui:GroupBox>
+            </ui:ScrollView>
+            <ui:ScrollView style="flex-wrap: wrap; max-height: 100px;">
+                <ui:GroupBox style="flex-direction: row; flex-wrap: nowrap;">
+                    <ui:TextField picking-mode="Ignore" label="Intro Prompt" text="Intro Prompt&#10;Intro Prompt" name="TextFieldIntroPrompt" readonly="false" multiline="true" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; flex-shrink: 1; flex-grow: 1; width: 48%;" />
+                    <ui:TextField picking-mode="Ignore" label="Intro Result" name="TextFieldIntroResult" readonly="true" multiline="true" text="Intro Result&#10;Intro Result" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; flex-shrink: 1; flex-grow: 1; width: 48%;" />
+                </ui:GroupBox>
+            </ui:ScrollView>
+            <ui:ScrollView style="flex-wrap: wrap; height: auto; max-height: 140px; flex-direction: column; flex-grow: 0;">
+                <ui:GroupBox style="flex-direction: row; flex-wrap: nowrap;">
+                    <ui:TextField picking-mode="Ignore" label="Steps Prompt" value="Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps " text="Steps prompt&#10;Steps prompt" name="TextFieldStepsPrompt" readonly="false" multiline="true" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; flex-shrink: 1; width: 48%; flex-grow: 1;" />
+                    <ui:TextField picking-mode="Ignore" label="Steps Result" value="Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps Steps " text="Steps Result&#10;Steps Result" name="TextFieldStepsResult" readonly="true" multiline="true" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; flex-shrink: 1; width: 48%; flex-grow: 1;" />
+                </ui:GroupBox>
+            </ui:ScrollView>
+            <ui:ScrollView style="flex-wrap: wrap; height: auto; max-height: 140px; flex-direction: column;">
+                <ui:GroupBox style="flex-direction: row; flex-wrap: wrap;">
+                    <ui:TextField picking-mode="Ignore" label="Outro Prompt" value="Outro Prompt" text="Outro Prompt&#10;Outro Prompt" name="TextFieldOutroPrompt" readonly="false" multiline="true" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; width: 48%;" />
+                    <ui:TextField picking-mode="Ignore" label="Outro Result" value="Outro Result" text="Outro Result&#10;Outro Result" name="TextFieldOutroResult" readonly="true" multiline="true" style="flex-wrap: nowrap; white-space: normal; flex-direction: column; width: 48%; -unity-text-align: upper-left;" />
+                </ui:GroupBox>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:Foldout>
+    <ui:Foldout text="Full Script" name="FoldoutFullScript" value="true">
+        <ui:ScrollView style="max-height: 400px;">
+            <ui:TextField picking-mode="Ignore" value="filler text" text="Full script here..." name="TextFieldFullScript" style="flex-direction: column; white-space: normal; flex-wrap: wrap;" />
+        </ui:ScrollView>
+    </ui:Foldout>
+</ui:UXML>

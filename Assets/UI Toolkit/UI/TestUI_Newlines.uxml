@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:TextField picking-mode="Ignore" label="Newline Test" value="filler text" text="filler text" multiline="true" name="TextFieldNewlineTest" style="flex-direction: column; white-space: normal;" />
+    <ui:Button text="Log to Console" display-tooltip-when-elided="true" name="ButtonLogToConsole" />
+</ui:UXML>

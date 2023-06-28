@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button text="Go to Next" display-tooltip-when-elided="true" name="ButtonGoToNext" />
+    <ui:Foldout text="Full Script" name="FoldoutFullScript" value="true">
+        <ui:ScrollView style="max-height: 400px;">
+            <ui:TextField picking-mode="Ignore" value="filler text" text="Full script here..." name="TextFieldFullScript" style="flex-direction: column; white-space: normal; flex-wrap: wrap;" />
+        </ui:ScrollView>
+    </ui:Foldout>
+</ui:UXML>

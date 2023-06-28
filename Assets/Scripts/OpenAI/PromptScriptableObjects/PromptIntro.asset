@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3582752d2c904468d2c1b4b9a3a904, type: 3}
+  m_Name: PromptIntro
+  m_EditorClassIdentifier: 
+  text: "You are a writer for the TV show \"Factory Factory\".\r\nToday you are writing
+    an intro for an episode.\r\n\r\nHere is the intro for 3 different episodes:\n\nlaptops:
+    \r\n\"Narrator: From room-sized computers to desk-sized, and now portable laptops
+    that fit on your lap - technology has come a long way. Today's laptops are smaller,
+    more powerful, and more convenient than ever before.\"\n\r\ncar tires:\r\n\"Join
+    us as we trace the history of transportation. Once crafted from metal or wood,
+    wheels were revolutionized with the introduction of air-filled rubber tires in
+    the early 20th century. This breakthrough provided a smoother ride, better shock
+    absorption, and improved traction with the addition of tread.\"\n\n{product name}\r\n\"Narrator:"
+  textToPrepend: 
+  modelName: text-babbage-001
+  temperature: 1
+  maxLength: 250
+  textFieldName: TextFieldIntro

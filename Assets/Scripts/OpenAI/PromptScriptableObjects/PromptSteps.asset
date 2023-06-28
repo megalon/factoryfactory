@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3582752d2c904468d2c1b4b9a3a904, type: 3}
+  m_Name: PromptSteps
+  m_EditorClassIdentifier: 
+  text: 'You are a writer for a TV show about how things are made. These can be abstract
+    concepts, or tangible products. These products are made on an assembly line using
+    many different machines. The show is called "Factory Factory". In this episode
+    you are describing how something is made in a {num steps} step process. Make
+    sure it is wacky and interesting.
+
+
+    Use this prompt: {product name}
+
+
+    Step
+    1. It all starts with'
+  textToPrepend: 'Step 1. It all starts with '
+  modelName: gpt-3.5-turbo
+  temperature: 1
+  maxLength: 500
+  textFieldName: TextFieldSteps
